@@ -82,3 +82,26 @@ src: [Adding a new interface to VM](https://docs.microsoft.com/en-us/azure/virtu
 ![all public ips](./ex4a_vm_interface_1.png)
 ![interface config 1](./ex4a_vm_interface_config_1.png)
 ![interface config 2](./ex4a_vm_interface_config_2.png)
+
+---
+### Exercise 3:
+
+* Launch two Ubuntu 16.04 VMs with Managed disk.
+* SSH into both VMs and install apache web server.
+* Create a standard Load Balancer and then add the Virtual Machines to the backed pool.
+* Change the SKU property of Public IPs to "standard".
+* Access the Load balancer's IP through the browser and check whether it is distributing the requests to both the virtual machines.
+
+---
+##### While creating VMs take care of the following:
+* Add the VMs in an availability Set
+* Edit the public IP settings to be in "standard"
+
+##### Steps
+* Create the loadbalancer and add the VMs from the availability set.
+* Use the Standard type for IP in LB
+![vm lb config](./ex4c_vm_lb.png)
+* Building Pool for lb
+![vm pool config](./ex4c_vm_pool.png)
+* Make the Health probes as standard
+* Use the standard lb rule

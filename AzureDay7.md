@@ -144,3 +144,13 @@ $ az role assignment create --role ex7-role --assignee test_user@prateeknischal2
 ```
 ![assigned to user](ex7b_role_assigned.png)
 * Able to see network resources
+
+
+* Get list of users (find the objectId):
+```bash
+$ az ad user list
+```
+* Delete the user
+```bash
+$ az ad user delete --upn-or-object-id b44a41f7-2e43-405d-acbd-4ab583a464f6
+```

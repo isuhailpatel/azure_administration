@@ -185,3 +185,4 @@ $ az monitor metrics list --resource /subscriptions/f11a7ad6-f444-4a83-9f0d-19dd
   ]
 }
 ```
+Resource: [Metrics using Azure CLI](https://docs.microsoft.com/en-us/cli/azure/monitor/metrics?view=azure-cli-latest)
